@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Global Anónimo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ad-space top-ad">Publicidad - Banner 728x90</div>
+
+    <main id="chat-container">
+        <ul id="messages"></ul>
+    </main>
+
+    <form id="form">
+        <input type="file" id="image-input" accept="image/*" style="display: none;" />
+        <label for="image-input" style="cursor: pointer; padding: 0 10px; font-size: 1.5rem;">📷</label>
+        
+        <input id="input" autocomplete="off" placeholder="Escribe un mensaje..." />
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
